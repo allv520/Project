@@ -1,5 +1,3 @@
-# 🎬 CineTrack
-
 [![Status: In Development](https://img.shields.io/badge/Status-In%20Development-blue)](https://github.com/your-username/cinetrack)
 [![HTML](https://img.shields.io/badge/HTML-%20%E2%9C%94-green)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-%20%E2%9C%94-green)](https://developer.mozilla.org/en-US/docs/Web/CSS)
