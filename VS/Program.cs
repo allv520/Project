@@ -1,8 +1,10 @@
 
-using DataAccess.Interfaces;
+using BusinessLogic.Interfaces;
+using BusinessLogic.Services;
 using DataAccess.Models;
 using DataAccess.Wrapper;
 using Microsoft.EntityFrameworkCore;
+using System.Security;
 
 namespace WebApplication1
 {
@@ -12,17 +14,13 @@ namespace WebApplication1
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContext<TrackerContext>(
+            // Add services to the container.
+            builder.Services.AddDbContext<CinemaContext>(
                 options => options.UseSqlServer(
-                    "Server=AA;Database=Tracker;Trusted_Connection=true;TrustServerCertificate=true"));
+                    "Server=AA;Database=Cinema;Trusted_Connection=true;TrustServerCertificate=true"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
-            builder.Services.AddScoped<IUserRepository, IUserRepository>();
-
-
-
-            // Add services to the container.
-
+            builder.Services.AddScoped <IUserService, UserService>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

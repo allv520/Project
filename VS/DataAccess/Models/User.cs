@@ -7,29 +7,23 @@ public partial class User
 {
     public int UserId { get; set; }
 
-    public string PasswordHash { get; set; } = null!;
+    public string Username { get; set; } = null!;
 
     public string Email { get; set; } = null!;
 
-    public string Username { get; set; } = null!;
+    public string PasswordHash { get; set; } = null!;
 
     public DateOnly DateOfBirth { get; set; }
 
-    public string Gender { get; set; } = null!;
+    public string Bio { get; set; } = null!;
 
-    public decimal HeightCm { get; set; }
+    public string AvatarUrl { get; set; } = null!;
 
-    public virtual ICollection<DailySummary> DailySummaries { get; set; } = new List<DailySummary>();
+    public virtual ICollection<DiscussionThread> DiscussionThreads { get; set; } = new List<DiscussionThread>();
 
-    public virtual ICollection<Recommendation> Recommendations { get; set; } = new List<Recommendation>();
+    public virtual ICollection<Rating> Ratings { get; set; } = new List<Rating>();
 
-    public virtual ICollection<UserActivityLog> UserActivityLogs { get; set; } = new List<UserActivityLog>();
+    public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
-    public virtual ICollection<UserFoodLog> UserFoodLogs { get; set; } = new List<UserFoodLog>();
-
-    public virtual ICollection<UserGoal> UserGoals { get; set; } = new List<UserGoal>();
-
-    public virtual ICollection<WaterIntakeLog> WaterIntakeLogs { get; set; } = new List<WaterIntakeLog>();
-
-    public virtual ICollection<WeightLog> WeightLogs { get; set; } = new List<WeightLog>();
+    public virtual ICollection<Watchlist> Watchlists { get; set; } = new List<Watchlist>();
 }

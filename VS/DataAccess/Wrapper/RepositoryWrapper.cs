@@ -6,7 +6,7 @@ namespace DataAccess.Wrapper
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private TrackerContext _repoContext;
+        private CinemaContext _repoContext;
         private IUserRepository _user;
 
         public IUserRepository User
@@ -21,7 +21,7 @@ namespace DataAccess.Wrapper
             }
         }
 
-        public RepositoryWrapper(TrackerContext repositoryContext)
+        public RepositoryWrapper(CinemaContext repositoryContext)
         {
             _repoContext = repositoryContext;
         }

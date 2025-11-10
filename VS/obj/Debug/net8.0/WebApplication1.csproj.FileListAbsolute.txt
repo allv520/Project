@@ -35,6 +35,7 @@ C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebA
 C:\Users\User\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
 C:\Users\111\Desktop\VS\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\111\Desktop\VS\bin\Debug\net8.0\appsettings.json
+C:\Users\111\Desktop\VS\bin\Debug\net8.0\не смотри даже сюда\OCCT.config.json
 C:\Users\111\Desktop\VS\bin\Debug\net8.0\WebApplication1.staticwebassets.endpoints.json
 C:\Users\111\Desktop\VS\bin\Debug\net8.0\WebApplication1.exe
 C:\Users\111\Desktop\VS\bin\Debug\net8.0\WebApplication1.deps.json

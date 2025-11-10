@@ -7,9 +7,9 @@ namespace DataAccess.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected TrackerContext RepositoryContext { get; set; }
+        protected CinemaContext RepositoryContext { get; set; }
 
-        public RepositoryBase(TrackerContext repositoryContext)
+        public RepositoryBase(CinemaContext repositoryContext)
         {
             RepositoryContext = repositoryContext;
         }
